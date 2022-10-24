@@ -52,7 +52,7 @@ def introduce():
             "outputs": [
                 {
                     "simpleImage": {
-                        "imageUrl": 'images/introduce.png',
+                        "imageUrl": '/images/introduce.png',
                         "altText": "장학관 소개"
                     }
                 }
