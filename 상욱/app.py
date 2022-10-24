@@ -1,3 +1,4 @@
+ï»¿# -*- coding: utf-8 -*-
 from flask import Flask,request,jsonify
 
 app = Flask(__name__)
@@ -7,18 +8,45 @@ app = Flask(__name__)
 def start():
     return "Hello goorm!"
 
+# ì‹ì‚¬ ì‹œê°„
+@app.route("/Meal_Time",methods=['POST'])
+def Meal_Time():
+    
+    textstr = "í™”ì„±ì‹œì¥í•™ê´€ ë™ì‘ë‚˜ë˜ê´€ì˜ ì‹ì‚¬ì‹œê°„ ì…ë‹ˆë‹¤.\n"
+    textstr += "í‰ì¼\n"
+    textstr += "ì•„ì¹¨: 7:00-8:30\n"
+    textstr += "ì ì‹¬: 11:40-13:00\n"
+    textstr += "ì €ë…: 18:00-19:30\n"
+    textstr += "ì£¼ë§\n"
+    textstr += "ì•„ì¹¨: 8:00-9:00\n"
+    textstr += "ì ì‹¬: 12:00-13:00\n"
+    textstr += "ì €ë…: 18:00-19:30\n"
+
+    res = {
+        "version": "2.0",
+        "template": {
+            "outputs": [
+                {
+                    "simpleText": {
+                        "text": textstr
+                    }
+                }
+            ]
+        }
+    }
+
 @app.route("/fee",methods=['POST'])
 def fee():
-    # ½ÅÀÔ»ıÀÎÁö ÀçÇĞ»ıÀÎÁö request·Î ±¸ºĞ
+    # ì‹ ì…ìƒì¸ì§€ ì¬í•™ìƒì¸ì§€ requestë¡œ êµ¬ë¶„
     req = request.get_json()
     
     member_type = req["action"]["detailParams"]["Member_type"]["value"]	
     
     fee = 0
     
-    if member_type == "ÀçÇĞ»ı":
+    if member_type == "ì¬í•™ìƒ":
         fee = 20000
-    elif member_type == "½ÅÀÔ»ı":
+    elif member_type == "ì‹ ì…ìƒ":
         fee = 20000
     else :
         fee = 0
@@ -29,7 +57,7 @@ def fee():
             "outputs": [
                 {
                     "simpleText": {
-                        "text": "[µ¿¾Æ¸® È¸ºñ] ½ÅÀÔ»ı : 20000¿ø, ÀçÇĞ»ı : 20000¿ø",
+                        "text": "[ë™ì•„ë¦¬ íšŒë¹„] ì‹ ì…ìƒ : 20000ì›, ì¬í•™ìƒ : 20000ì›",
                         "request": req
                     }
                 }
@@ -41,7 +69,7 @@ def fee():
 
 @app.route("/hello",methods=['POST'])
 def hello():
-    # ½ÅÀÔ»ıÀÎÁö ÀçÇĞ»ıÀÎÁö request·Î ±¸ºĞ
+    # ì‹ ì…ìƒì¸ì§€ ì¬í•™ìƒì¸ì§€ requestë¡œ êµ¬ë¶„
     req = request.get_json()
     
     
@@ -60,7 +88,7 @@ def hello():
     
     return jsonify(res)
 
-#ÀÎÅÍÆäÀÌ½º ¼Ò°³
+#ì¸í„°í˜ì´ìŠ¤ ì†Œê°œ
 @app.route("/intro",methods=['POST'])
 def intro():
     
@@ -70,7 +98,7 @@ def intro():
             "outputs": [
                 {
                     "simpleText": {
-                        "text": "¾È³çÇÏ¼¼¿ä ¼¼Á¾´ëÇĞ±³ Áß¾Óµ¿¾Æ¸® ÀÎÅÍÆäÀÌ½ºÀÔ´Ï´Ù."
+                        "text": "ì•ˆë…•í•˜ì„¸ìš” ì„¸ì¢…ëŒ€í•™êµ ì¤‘ì•™ë™ì•„ë¦¬ ì¸í„°í˜ì´ìŠ¤ì…ë‹ˆë‹¤."
                     }
                 }
             ]
@@ -79,7 +107,7 @@ def intro():
     
     return jsonify(res)
 
-# ÀÎÅÍÆäÀÌ½º ¸ğÁı¿ä°­
+# ì¸í„°í˜ì´ìŠ¤ ëª¨ì§‘ìš”ê°•
 @chatbot.route("/guide",methods=['POST'])
 def guide():
     
@@ -97,11 +125,11 @@ def guide():
                 ]
             }
         }   
-    if(userReq == "Å×½ºÆ®"):
+    if(userReq == "í…ŒìŠ¤íŠ¸"):
         res['outputs']['simpletext']['link'] = "text"
     
     return res
     
 
 if __name__ == "__main__":
-    chatbot.run(host='0.0.0.0', port=5000, threaded=True)
+    chatbot.run(host='34.132.35.80', port=5001, threaded=True)
