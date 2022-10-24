@@ -35,6 +35,8 @@ def Meal_Time():
         }
     }
 
+    return jsonify(res)
+
 @app.route("/fee",methods=['POST'])
 def fee():
     # 신입생인지 재학생인지 request로 구분
@@ -108,7 +110,7 @@ def intro():
     return jsonify(res)
 
 # 인터페이스 모집요강
-@chatbot.route("/guide",methods=['POST'])
+@app.route("/guide",methods=['POST'])
 def guide():
     
     body = request.get_json()
@@ -124,7 +126,7 @@ def guide():
                     }
                 ]
             }
-        }   
+        }
     if(userReq == "테스트"):
         res['outputs']['simpletext']['link'] = "text"
     
@@ -132,4 +134,5 @@ def guide():
     
 
 if __name__ == "__main__":
-    chatbot.run(host='34.132.35.80', port=5001, threaded=True)
+    #app.run(host='34.132.35.80', port=5001, threaded=True)
+    app.run(host='0.0.0.0', port=5001, threaded=True)
