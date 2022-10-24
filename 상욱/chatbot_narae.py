@@ -8,6 +8,9 @@ chatbot_narae = Flask(__name__)
 def start():
     return "Hello goorm!"
 
+
+# 화성시장학관 동작나래관 사생용 챗봇 스킬
+
 # 식사 시간
 @chatbot_narae.route("/Meal_Time",methods=['POST'])
 def Meal_Time():
@@ -29,6 +32,28 @@ def Meal_Time():
                 {
                     "simpleText": {
                         "text": textstr
+                    }
+                }
+            ]
+        }
+    }
+
+    return jsonify(res)
+
+# 화성시장학관 동작나래관 외부인용 챗봇 스킬
+
+# 장학관 소개
+@chatbot_narae.route("/introduce",methods=['POST'])
+def introduce():
+
+    res = {
+        "version": "2.0",
+        "template": {
+            "outputs": [
+                {
+                    "simpleImage": {
+                        "imageUrl": 'images/introduce.png',
+                        "altText": "장학관 소개"
                     }
                 }
             ]
