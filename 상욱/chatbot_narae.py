@@ -282,9 +282,9 @@ def recruitment ():
 @chatbot_narae.route("/position ",methods=['POST'])
 def position ():
 
-    str = "화성시장학관 동작나래관은\n"
-    str += "서울특별시 동작구 성대로 11길 60에 위치해있습니다.\n"
-    str += "버튼을 클릭하여 네이버 지도에서 위치를 확인할 수 있습니다.\n"
+    pstr = "화성시장학관 동작나래관은\n"
+    pstr += "서울특별시 동작구 성대로 11길 60에 위치해있습니다.\n"
+    pstr += "버튼을 클릭하여 네이버 지도에서 위치를 확인할 수 있습니다.\n"
 
     res = {
           "version": "2.0",
@@ -295,7 +295,7 @@ def position ():
                   "type": "basicCard",
                   "items": [
                     {
-                      "description": str,
+                      "description": pstr,
                       "buttons": [
                                 {
                                     "action":  "webLink",
