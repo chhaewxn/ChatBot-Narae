@@ -275,6 +275,7 @@ def recruitment ():
             ]
           }
         }
+
     return  jsonify(res)
 
 # 장학관 위치
