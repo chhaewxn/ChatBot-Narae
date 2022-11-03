@@ -53,6 +53,7 @@ def introduce():
                 {
                     "simpleImage": {
                         "imageUrl": "https://github.com/Hstree-Dongjak-Narae/ChatBot-Narae/blob/main/%EC%83%81%EC%9A%B1/images/introduce.png",
+                        #"imageUrl": "https://github.com/Hstree-Dongjak-Narae/ChatBot-Narae/blob/main/%EC%83%81%EC%9A%B1/images/introduce.png?raw=true",
                         "altText": "장학관 소개"
                     }
                 }
