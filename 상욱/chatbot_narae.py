@@ -15,7 +15,7 @@ def start():
 @chatbot_narae.route("/Meal_Time",methods=['POST'])
 def Meal_Time():
     
-    textstr = "화성시장학관 동작나래관의 식사시간 입니다.\n"
+    textstr = "화성시장학관 동작나래관의 식사시간 입니다.\n\n"
     textstr += "평일\n"
     textstr += "아침: 7:00-8:30\n"
     textstr += "점심: 11:40-13:00\n"
@@ -167,11 +167,6 @@ def road():
                 {
                     "basicCard": {
                         "description": "현재 위치에서 장학관까지 경로입니다.\n카카오맵의 설치가 필요합니다.",
-                        '''
-                        "thumbnail": {
-                            "imageUrl": "https://www.hstree.org/images/hstree/sub/scholarship_img02.png"
-                        },
-                        '''
                         "buttons": [
                             {
                                 "action":  "webLink",
