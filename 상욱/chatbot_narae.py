@@ -247,6 +247,70 @@ def introduce():
 
     return jsonify(res)
 
+# 장학관 모집요강
+@chatbot_narae.route("/recruitment ",methods=['POST'])
+def recruitment ():
+
+    res = {
+          "version": "2.0",
+          "template": {
+            "outputs": [
+              {
+                "carousel": {
+                  "type": "basicCard",
+                  "items": [
+                    {
+                      "description": "2022년 화성시 장학관\n입사생 선발 공고입니다.",
+                      "buttons": [
+                                {
+                                    "action":  "webLink",
+                                    "label": "입사생 선발 공고",
+                                    "webLinkUrl": "https://www.hstree.org/news/noticeView.do?seq=2020"
+                                }
+                            ]
+                      }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+    return  jsonify(res)
+
+# 장학관 위치
+@chatbot_narae.route("/position ",methods=['POST'])
+def position ():
+
+    str = "화성시장학관 동작나래관은\n"
+    str += "서울특별시 동작구 성대로 11길 60에 위치해있습니다.\n"
+    str += "버튼을 클릭하여 네이버 지도에서 위치를 확인할 수 있습니다.\n"
+
+    res = {
+          "version": "2.0",
+          "template": {
+            "outputs": [
+              {
+                "carousel": {
+                  "type": "basicCard",
+                  "items": [
+                    {
+                      "description": str,
+                      "buttons": [
+                                {
+                                    "action":  "webLink",
+                                    "label": "입사생 선발 공고",
+                                    "webLinkUrl": "https://naver.me/GlVLep1m"
+                                }
+                            ]
+                      }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+    return  jsonify(res)
+
 if __name__ == "__main__":
     #chatbot_narae.run(host='0.0.0.0', port=5001, threaded=True)
     chatbot_narae.run(host='10.128.0.2', port=5001, threaded=True)
