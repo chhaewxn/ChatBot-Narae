@@ -52,8 +52,8 @@ def introduce():
             "outputs": [
                 {
                     "simpleImage": {
-                        "imageUrl": "https://github.com/Hstree-Dongjak-Narae/ChatBot-Narae/blob/main/%EC%83%81%EC%9A%B1/images/introduce.png",
-                        #"imageUrl": "https://github.com/Hstree-Dongjak-Narae/ChatBot-Narae/blob/main/%EC%83%81%EC%9A%B1/images/introduce.png?raw=true",
+                        #"imageUrl": "https://github.com/Hstree-Dongjak-Narae/ChatBot-Narae/blob/main/%EC%83%81%EC%9A%B1/images/introduce.png",
+                        "imageUrl": "https://raw.githubusercontent.com/Hstree-Dongjak-Narae/ChatBot-Narae/main/%EC%83%81%EC%9A%B1/images/introduce.png",
                         "altText": "장학관 소개"
                     }
                 }
