@@ -41,7 +41,7 @@ def Meal_Time():
     return jsonify(res)
 
 # 장학관 홈페이지 알림
-@chatbot_narae.route("/homepage",methods=['POST')
+@chatbot_narae.route("/homepage",methods=['POST'])
 def homepage():
     res = {
         "version": "2.0",
