@@ -129,23 +129,23 @@ def club():
                         },
                         {
                             "title": "보드게임 동아리",
-                            "description": "재밌는 보드 게임들을 즐기는 동아리입니다.",
+                            "description": "루미큐브, 할리갈리등 여러 가지 재밌는 보드 게임들을 즐기는 동아리입니다.",
                             "thumbnail": {
-                                "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                                "imageUrl": "https://github.com/Hstree-Dongjak-Narae/ChatBot-Narae/blob/main/%EC%83%81%EC%9A%B1/images/%EB%8F%99%EC%95%84%EB%A6%AC%2520%ED%99%9C%EB%8F%99%EC%82%AC%EC%A7%84/%EB%B3%B4%EB%93%9C%EA%B2%8C%EC%9E%84%20%EB%8F%99%EC%95%84%EB%A6%AC(%EB%B3%B4%EA%B2%8C)/%EB%B3%B4%EA%B2%8C%208%EC%9B%94%20%ED%99%9C%EB%8F%99%EC%82%AC%EC%A7%844.jpg?raw=true"
                             }
                         },
                         {
                             "title": "스포츠 동아리",
                             "description": "배드민턴, 풋살, 볼링 등 다양한 스포츠를 즐기며 활동하는 동아리입니다.",
                             "thumbnail": {
-                                "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                                "imageUrl": "https://github.com/Hstree-Dongjak-Narae/ChatBot-Narae/blob/main/%EC%83%81%EC%9A%B1/images/%EB%8F%99%EC%95%84%EB%A6%AC%2520%ED%99%9C%EB%8F%99%EC%82%AC%EC%A7%84/%EC%8A%A4%ED%8F%AC%EC%B8%A0%20%EB%8F%99%EC%95%84%EB%A6%AC(%EC%8A%A4%EB%8F%99)/%EC%8A%A4%EB%8F%99%209%EC%9B%94%20%ED%99%9C%EB%8F%99%EC%82%AC%EC%A7%841.png?raw=true"
                             }
                         },
                         {
-                            "title": "영화 감상 동아리",
-                            "description": "사생들과 함께 영화관에서 영화를 감상하는 동아리입니다.",
+                            "title": "문화 동아리",
+                            "description": "네일아트, 소품 꾸미기, 봉사활동등 다양한 문화 활동을 하는 동아리입니다.",
                             "thumbnail": {
-                            "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                            "imageUrl": "https://raw.githubusercontent.com/Hstree-Dongjak-Narae/ChatBot-Narae/main/%EC%83%81%EC%9A%B1/images/%EB%8F%99%EC%95%84%EB%A6%AC%2520%ED%99%9C%EB%8F%99%EC%82%AC%EC%A7%84/%EB%AC%B8%ED%99%94%20%EB%8F%99%EC%95%84%EB%A6%AC(%EB%8F%84%EB%9E%80%EB%8F%84%EB%9E%80)/%EB%8F%84%EB%9E%80%EB%8F%84%EB%9E%80%209%EC%9B%94%20%ED%99%9C%EB%8F%99%EC%82%AC%EC%A7%844.png"
                             }
                         }
                         ]
