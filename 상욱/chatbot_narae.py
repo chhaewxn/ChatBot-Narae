@@ -124,7 +124,7 @@ def club():
                             "title": "챗봇 제작 동아리",
                             "description": "화성시 장학관의 다양한 소식과 정보들을 제공하는 챗봇을 제작하고 유지 보수하는 동아리 입니다.",
                             "thumbnail": {
-                                "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                                "imageUrl": "https://github.com/Hstree-Dongjak-Narae/ChatBot-Narae/blob/main/%EC%83%81%EC%9A%B1/images/%EB%8F%99%EC%95%84%EB%A6%AC%2520%ED%99%9C%EB%8F%99%EC%82%AC%EC%A7%84/%EC%B1%97%EB%B4%87%EC%A0%9C%EC%9E%91%20%EB%8F%99%EC%95%84%EB%A6%AC/%EC%8B%A4%EC%A0%9C%20%EC%82%AC%EC%9A%A9%20%ED%99%94%EB%A9%B4.png?raw=true"
                             }
                         },
                         {
