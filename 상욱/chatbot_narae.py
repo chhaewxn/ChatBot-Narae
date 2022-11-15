@@ -302,5 +302,5 @@ def position():
     return jsonify(res)
 
 if __name__ == "__main__":
-    chatbot_narae.run(host='0.0.0.0', port=5001, threaded=True)
-    #chatbot_narae.run(host='10.128.0.2', port=5001, threaded=True)
+    #chatbot_narae.run(host='0.0.0.0', port=5001, threaded=True)
+    chatbot_narae.run(host='10.128.0.2', port=5001, threaded=True)
