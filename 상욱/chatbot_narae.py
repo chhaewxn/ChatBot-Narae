@@ -258,7 +258,7 @@ def recruitment():
               {
                   "basicCard": {
                     "description": "2022년 화성시 장학관\n입사생 선발 공고입니다.",
-                      "buttons": [
+                    "buttons": [
                             {
                                 "action":  "webLink",
                                 "label": "입사생 선발 공고",
