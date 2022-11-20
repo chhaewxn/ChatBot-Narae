@@ -290,7 +290,7 @@ def position():
                       "buttons": [
                             {
                                 "action":  "webLink",
-                                "label": "입사생 선발 공고",
+                                "label": "네이버 지도 바로가기",
                                 "webLinkUrl": "https://naver.me/GlVLep1m"
                             }
                         ]
