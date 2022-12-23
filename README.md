@@ -32,12 +32,9 @@
 ### 오픈채팅방 기능
 - [ ] 외박신청 알람
 
-+ ~~~머신러닝을 이용한 챗봇 학습 기능~~~
-
 ### 관련자료
 [카카오톡 채널 마스터 변경하는 법][1]<br>
 [날먹코딩 - 카카오톡 챗봇 만들기][2]
-
 
 [1]:https://m.blog.naver.com/kysu3257/221832410473
 [2]:https://www.youtube.com/channel/UCx3JSz_bDF7AXe2VFAEUVEA/videos
